@@ -1,0 +1,7 @@
+FROM docker.io/searxng/searxng:latest
+
+COPY settings.yml /etc/searxng/settings.yml
+COPY custom.css /usr/local/searxng/searx/static/themes/simple/css/custom.css
+RUN echo '@import url("custom.css");' >> /usr/local/searxng/searx/static/themes/simple/css/sxng-ltr.min.css
+
+EXPOSE 8080

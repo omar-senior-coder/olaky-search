@@ -1,0 +1,31 @@
+use_default_settings: true
+
+general:
+  instance_name: "OLAKY Search"
+  privacypolicy_url: false
+  donation_url: false
+  contact_url: false
+  enable_metrics: false
+
+search:
+  safe_search: 0
+  autocomplete: "google"
+  default_lang: "ar"
+  formats:
+    - html
+    - json
+
+server:
+  port: 8080
+  bind_address: "0.0.0.0"
+  secret_key: "olaky_super_secret_key_change_this_12345"
+  limiter: false
+  image_proxy: true
+
+ui:
+  static_use_hash: true
+  default_theme: simple
+  center_alignment: true
+  results_on_new_tab: false
+  theme_args:
+    simple_style: dark
